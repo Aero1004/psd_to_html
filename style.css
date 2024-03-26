@@ -17,6 +17,9 @@ body {
 
 header {
   background-image: url("./design-assets/bgk-header.png");
+}
+
+.background {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
