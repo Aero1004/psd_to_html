@@ -163,8 +163,169 @@ button:hover {
 }
 
 footer {
+  background-image: url(./design-assets/bgk-footer.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  color: white;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-section {
+  border: solid;
+  border-color: rgb(212, 235, 12);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  border: solid;
+  border-color: rgb(245, 69, 0);
+  gap: 20px;
+}
+.footer-div {
+  /* display: block;
+  position: static;
+  margin-right: 20px; */
+  border: solid;
+  border-color: rgb(69, 237, 243);
+}
+.footer-links {
+  display: flex;
+  border: solid;
+  border-color: rgb(12, 230, 77);
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.icon-section {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.icon-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50rem;
+  @media (min-width: 480px) {
+    display: grid;
+
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 20rem 1fr;
+    grid-gap: 1px;
+  }
+  background-color: darkgray;
+}
+
+.icon-box-1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: #fff;
+}
+
+.icon-box-2 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.icon-box-4 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.icon-box-5 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.icon-text,
+.team-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-text {
+  h2,
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.icon-seperator {
+  margin-top: 20px;
+  width: 75px;
+  border-top: 3px solid rgba(65, 61, 75, 0.3);
+}
+
+.icon-box {
+  padding: 2rem;
+  background-color: #fff;
+  display: grid;
+  justify-items: center;
+
+  p {
+    text-align: center;
+  }
+  width: 100%;
+  height: 100%;
+}
+
+.team-section {
+  background-image: url("./design-assets/bgk-header.png");
+  display: grid;
+  justify-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.team-div {
+  display: flex;
+  gap: 2rem;
+}
+
+.member-img {
+  background-color: aliceblue;
+  height: 16rem;
+  width: 15rem;
+}
+.hiring-box {
+  display: grid;
+  justify-items: center;
+
+  p {
+    margin-top: 5rem;
+  }
+  button {
+    margin-top: 3rem;
+  }
+}
+
+.member-description {
+  display: grid;
+  justify-items: center;
+  border: 1px solid #fff;
+  padding: 15px;
+  h5 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+h4,
+h5 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
