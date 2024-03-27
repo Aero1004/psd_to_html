@@ -237,11 +237,10 @@ footer {
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: 480px) {
+  @media (min-width: 700px) {
     display: grid;
-
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 23rem 23rem 23rem;
+    grid-template-columns: 20rem 20rem 20rem;
     grid-gap: 1px;
   }
   background-color: rgba(0, 0, 0, 0.1);
@@ -307,8 +306,9 @@ footer {
   flex-direction: column;
   gap: 2rem;
 
-  @media (min-width: 480px) {
+  @media (min-width: 700px) {
     display: flex;
+    flex-direction: row;
     gap: 2rem;
     margin-top: 4rem;
   }
