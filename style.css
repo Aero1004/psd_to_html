@@ -74,10 +74,16 @@ h2 {
   font-weight: 700;
 }
 
-h2 {
+h3 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 400;
+}
+
+h4 {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
 }
 
 hr {
@@ -87,10 +93,11 @@ hr {
   border: none;
 }
 
-p {
+.header-paragraph {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
+  font-family: "Roboto";
+  line-height: 2;
+  font-weight: 300;
 }
 
 .our {
