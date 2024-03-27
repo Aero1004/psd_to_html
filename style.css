@@ -163,8 +163,43 @@ button:hover {
 }
 
 footer {
+  background-image: url(./design-assets/bgk-footer.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  color: white;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-section {
+  border: solid;
+  border-color: rgb(212, 235, 12);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  border: solid;
+  border-color: rgb(245, 69, 0);
+  gap: 20px;
+}
+.footer-div {
+  /* display: block;
+  position: static;
+  margin-right: 20px; */
+  border: solid;
+  border-color: rgb(69, 237, 243);
+}
+.footer-links {
+  display: flex;
+  border: solid;
+  border-color: rgb(12, 230, 77);
+  padding: 2rem;
+  justify-content: space-between;
 }
