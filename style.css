@@ -1,45 +1,3 @@
-.our-story-section {
-  display: flex;
-
-  flex-direction: row;
-  justify-content: center;
-  margin: 50px;
-}
-
-.icon {
-  width: 150px;
-  height: 150px;
-  margin: 10px;
-  margin-right: 10%;
-}
-.middle {
-  align-items: center;
-}
-.button {
-  margin-top: 15px;
-  color: aqua;
-  border-color: aqua;
-}
-
-.background-image {
-  background-image: url("/psd_to_html/design-assets/bgk-middle.png");
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  height: 370px;
-}
-
-i {
-  color: white;
-  font-size: 30px;
-}
-.story {
-  color: white;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -106,17 +64,43 @@ header {
 
 h1 {
   font-size: 3rem;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
 }
 
 hr {
   width: 80px;
-  height: 2px;
+  height: 1px;
   background-color: #00e0d0;
   border: none;
 }
 
-p {
+.header-paragraph {
+  text-align: center;
+  font-family: "Roboto";
+  line-height: 2;
+  font-weight: 300;
+}
+
+.our {
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
@@ -125,11 +109,13 @@ p {
 button {
   background-color: transparent;
   border-color: aqua;
+  border-width: 1px;
   color: aqua;
   font-size: 1rem;
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 2px;
   width: 10rem;
 }
 
@@ -149,6 +135,51 @@ button:hover {
   border-color: yellow; */
   align-items: center;
   justify-content: space-evenly;
+}
+
+.our-story-section {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px;
+}
+
+.icon {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  margin-right: 10%;
+}
+.middle {
+  align-items: center;
+}
+
+.button {
+  margin-top: 15px;
+  color: aqua;
+  border-color: aqua;
+  border-radius: 50;
+}
+
+.background-image {
+  background-image: url("/psd_to_html/design-assets/bgk-middle.png");
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 370px;
+}
+
+i {
+  color: white;
+  font-size: 30px;
+}
+.story {
+  margin-top: 10px;
+  color: white;
 }
 
 footer {
@@ -282,3 +313,140 @@ footer {
 .footer-heading {
   margin-bottom: 2rem;
 }
+
+.icon-section {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.icon-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 700px) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 20rem 20rem 20rem;
+    grid-gap: 1px;
+  }
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 4rem;
+}
+
+.icon-text,
+.team-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-text {
+  h2 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin-bottom: 1rem;
+  }
+}
+.icon-paragraph {
+  margin-bottom: 1rem;
+  color: #2f2d35;
+  opacity: 75%;
+}
+
+.icon-seperator {
+  margin-top: 20px;
+  width: 5rem;
+  border-top: 3px solid rgba(65, 61, 75, 0.3);
+}
+
+.icon-box {
+  padding: 2rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+
+  p {
+    text-align: center;
+  }
+  height: 100%;
+}
+
+.team-section {
+  background-image: url("./design-assets/bgk-header.png");
+  display: grid;
+  justify-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.team-seperator {
+  margin-top: 20px;
+  width: 5rem;
+  border-top: solid hsla(0, 0%, 100%, 0.22);
+}
+
+.team-div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (min-width: 700px) {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+}
+
+.member-img {
+  background-color: aliceblue;
+  height: 16rem;
+  width: 15rem;
+}
+.hiring-box {
+  display: grid;
+  justify-items: center;
+
+  p {
+    margin-top: 5rem;
+  }
+  button {
+    margin-top: 1.5rem;
+  }
+}
+
+.member-description {
+  display: grid;
+  justify-items: center;
+  border: 1px solid #fff;
+  padding: 15px;
+  h5 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+h4,
+h5 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>; 400-900
+  font-style: normal; */
+
