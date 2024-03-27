@@ -1,3 +1,51 @@
+
+.our-story-section {
+  display: flex;
+  
+  flex-direction: row;
+  justify-content: center;
+  margin:50px;
+
+}
+
+.icon{
+width: 150px;
+height: 150px;
+margin: 10px;
+margin-right: 10%;
+}
+.middle {
+ align-items: center;}
+.button {
+  margin-top:15px;
+  color: aqua;
+  border-color: aqua;
+  
+}
+
+
+.background-image {
+  background-image: url('/psd_to_html/design-assets/bgk-middle.png');
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 370px;
+}
+
+
+i {
+
+color: white;
+font-size: 30px;
+}
+.story {
+  
+ color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +65,10 @@ body {
 
 header {
   background-image: url("./design-assets/bgk-header.png");
-  background-position: center center;
+}
+
+.background {
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -28,8 +79,8 @@ header {
   display: flex;
   flex-direction: row;
   width: 100%;
-  /* border-style: solid;
-  border-color: greenyellow; */
+  /* border-style: solid; */
+  /* border-color: greenyellow; */
   align-items: center;
   justify-content: space-evenly;
   padding: 1rem;
@@ -38,7 +89,6 @@ header {
 .nav-container ul {
   display: flex;
   flex-wrap: wrap;
-  /* width: 50rem; */
   justify-content: space-evenly;
   /* border-style: solid;
   border-color: red; */
@@ -62,17 +112,18 @@ header {
 
 h1 {
   font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
 }
 
 hr {
   width: 80px;
   height: 2px;
-  background-color: aqua;
+  background-color: #00e0d0;
   border: none;
 }
 
 p {
-  text-align: center;
+  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
@@ -82,13 +133,18 @@ button {
   border-color: aqua;
   color: aqua;
   font-size: 1rem;
+  font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 10rem;
 }
 
 button:hover {
-  background-color: aqua;
+  background-color: #00e0d0;
+  color: aliceblue;
+  font-weight: bold;
+  border: none;
+  transition: 0.6s;
 }
 
 .hero-container {
