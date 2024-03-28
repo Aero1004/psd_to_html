@@ -172,7 +172,7 @@ button:hover {
 }
 
 .background-image {
-  background-image: url("./design-assets/bgk-middle.png");
+  background-image: url(./design-assets/bgk-middle.png);
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -608,38 +608,34 @@ button:hover {
 }
 
 .our-story-section {
-
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
+
   margin: 50px;
-  @media (max-width: 700px){
+  @media (max-width: 700px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:2rem;
+    gap: 2rem;
   }
-    
 }
 
 .icon {
   width: 100px;
   height: 100px;
 
- margin-top: 30px;
- margin-left: 70px;
+  margin-top: 30px;
+  margin-left: 70px;
 }
 .middle {
   margin-left: 100px;
-  
 }
 
 .button {
   margin-top: 15px;
   color: aqua;
   border-color: aqua;
- 
 }
 
 .background-image {
