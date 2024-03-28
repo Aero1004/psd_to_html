@@ -458,3 +458,474 @@ h5 {
   font-optical-sizing: auto;
   font-weight: <weight>; 400-900
   font-style: normal; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header {
+  background-image: url("./design-assets/bgk-header.png");
+}
+
+.background {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  color: white;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* border-style: solid; */
+  /* border-color: greenyellow; */
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.nav-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* border-style: solid;
+  border-color: red; */
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  gap: 1.5rem;
+}
+
+.navlist a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.navlist a:hover {
+  text-decoration: none;
+  color: aqua;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  /*height: 500px;*/
+  /*border-style: solid;
+  border-color: yellow;*/
+  align-items: center;
+  justify-content: first baseline;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  margin-top: 8rem;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+hr {
+  width: 80px;
+  height: 1px;
+  background-color: #00e0d0;
+  border: none;
+}
+
+.header-paragraph {
+  text-align: center;
+  font-family: "Roboto";
+  line-height: 2;
+  font-weight: 300;
+}
+
+.parang {
+  text-align: left;
+  font-family: "Roboto";
+  line-height: 2;
+  font-weight: 300;
+}
+
+button {
+  background-color: transparent;
+  border-color: aqua;
+  border-width: 1px;
+  color: aqua;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  width: 10rem;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+button:hover {
+  background-color: #00e0d0;
+  color: aliceblue;
+  font-weight: bold;
+  border: none;
+
+  transition: 0.6s;
+}
+
+.our-story-section {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  margin: 50px;
+  @media (max-width: 700px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+  }
+    
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+
+ margin-top: 30px;
+ margin-left: 70px;
+}
+.middle {
+  margin-left: 100px;
+  
+}
+
+.button {
+  margin-top: 15px;
+  color: aqua;
+  border-color: aqua;
+ 
+}
+
+.background-image {
+  background-image: url("/psd_to_html/design-assets/bgk-middle.png");
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 370px;
+}
+
+i {
+  color: white;
+  font-size: 30px;
+}
+.story {
+  margin-top: 10px;
+  color: white;
+}
+
+footer {
+  background-image: url(./design-assets/bgk-footer.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  color: white;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-section {
+  border: solid;
+  border-color: rgb(212, 235, 12);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  justify-content: center;
+  border: solid;
+
+  gap: 20px;
+}
+.footer-div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0 20px 0 0;
+}
+.footer-logo {
+  display: inline-block;
+  position: static;
+  left: auto;
+  /* size: 14px 10px; */
+}
+
+.footer-text {
+  display: flex;
+  position: inherit;
+  padding: 5px;
+  margin: 15px 0 10px;
+  /* border: solid; */
+  /* border-color: blueviolet; */
+}
+
+.footer-div2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 20rem;
+  line-height: 1.4rem;
+}
+
+.footer-div2-heading {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.footer-div2-location {
+  display: flex;
+  color: beige;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+
+  /* justify-content: space-between; */
+}
+
+.footer-location-icon {
+  height: 50%;
+}
+.phone-div {
+  display: flex;
+}
+.footer-phone-icon {
+  padding-right: 1.5rem;
+}
+
+.footer-links {
+  display: flex;
+  border: solid;
+  border-color: rgb(12, 230, 77);
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.footer-div3 {
+  gap: 2rem;
+}
+
+#email-form-2 {
+  display: flex;
+  gap: 0.8rem;
+  background-color: transparent;
+}
+
+.subscribe-input {
+  background-color: transparent;
+  border-style: none;
+  border: solid 1px #fff;
+}
+.subscribe-input::placeholder {
+  color: #fff;
+  opacity: 0.5;
+  font-weight: 100;
+  padding: 1rem;
+}
+.submit-btn {
+  background-color: hsla(0, 0%, 100%, 0.5);
+  /* width: 5rem;
+  height: 4rem; */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  /* opacity: 40%; */
+}
+.w-form {
+  /* border: solid green 3px; */
+  margin-bottom: 2rem;
+}
+.footer-heading {
+  margin-bottom: 2rem;
+}
+
+.icon-section {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.icon-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 700px) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 20rem 20rem 20rem;
+    grid-gap: 1px;
+  }
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 4rem;
+}
+
+.icon-text,
+.team-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-text {
+  h2 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin-bottom: 1rem;
+  }
+}
+.icon-paragraph {
+  margin-bottom: 1rem;
+  color: #2f2d35;
+  opacity: 75%;
+}
+
+.icon-seperator {
+  margin-top: 20px;
+  width: 5rem;
+  border-top: 3px solid rgba(65, 61, 75, 0.3);
+}
+
+.icon-box {
+  padding: 2rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+
+  p {
+    text-align: center;
+  }
+  height: 100%;
+}
+
+.team-section {
+  background-image: url("./design-assets/bgk-header.png");
+  display: grid;
+  justify-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.team-seperator {
+  margin-top: 20px;
+  width: 5rem;
+  border-top: solid hsla(0, 0%, 100%, 0.22);
+}
+
+.team-div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (min-width: 700px) {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+}
+
+.member-img {
+  background-color: aliceblue;
+  height: 16rem;
+  width: 15rem;
+}
+.hiring-box {
+  display: grid;
+  justify-items: center;
+
+  p {
+    margin-top: 5rem;
+  }
+  button {
+    margin-top: 1.5rem;
+  }
+}
+
+.member-description {
+  display: grid;
+  justify-items: center;
+  border: 1px solid #fff;
+  padding: 15px;
+  h5 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+h4,
+h5 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>; 400-900
+  font-style: normal; */
