@@ -74,6 +74,10 @@ header {
   gap: 2rem;
 }
 
+#navbar-home {
+  color: #00e0d0;
+}
+
 h1 {
   font-size: 2.5rem;
   font-family: "Playfair Display", serif;
@@ -178,7 +182,6 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   height: 370px;
 }
 
