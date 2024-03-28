@@ -171,7 +171,7 @@ button:hover {
   border-color: aqua;
 }
 
-.background-image {
+#video-section-background {
   background-image: url(./design-assets/bgk-middle.png);
   margin-bottom: 20px;
   display: flex;
